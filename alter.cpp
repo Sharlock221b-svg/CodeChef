@@ -17,12 +17,13 @@ void solve()
 
    if(p % a != 0 || q % b != 0){
        cout<<"no"<<endl;
+       return;
    }
    
    int n1 = p / a;
    int n2 = q / b;
 
-   if(-1 <= n1-n2 || n1-n2 <= 1){
+   if(-1 <= n1-n2 && n1-n2 <= 1){
         cout<<"yes"<<endl;
    }
    else{
